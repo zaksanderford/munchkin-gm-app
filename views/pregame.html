@@ -1,0 +1,16 @@
+<h1>Pregame</h1>
+<div ng-controller="PlayerController as playerCtrl">
+  <ul id="ninja-list">
+      <li ng-repeat="player in players | orderBy: order | filter: search">
+        <h3>{{player.name}} - {{player.gender}}</h3>
+        <span class="remove" ng-click="removePlayer(player)">x</span>
+      </li>
+  </ul>
+  <form ng-submit="addPlayer()">
+    <input type="text" placeholder="Name" ng-model="newPlayer.name">
+    <input type="radio" name="gender" value="male" ng-model="newPlayer.gender" checked> Male
+    <input type="radio" name="gender" value="female" ng-model="newPlayer.gender"> Female
+    <tt>gender = {{newPlayer.gender | json}}</tt><br/>
+    <input type="submit" value="Add New Player">
+  </form>
+</div>
