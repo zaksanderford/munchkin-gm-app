@@ -10,4 +10,5 @@ Extended Functionality will be data storage and analysis.
 
 ####Current Status as of 4-Feb-2017
 -File Hierarchy Established and basic layout and structure established.
+
 -Player List has basic add/remove functionality with no validation.
