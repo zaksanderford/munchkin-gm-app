@@ -110,6 +110,7 @@ table {
 /****************
   ELEMENT STYLES
 ****************/
+
 * {
 	border: 1px solid red !important;
 }
@@ -119,8 +120,16 @@ body {
 }
 
 h1 {
-	font-size: 300%;
+	font-size: 200%;
+	margin: 20px;
 	text-align: center;
+}
+
+main {
+	margin: 20px auto;
+	padding: 10px;
+	text-align: center;
+	width: 80%;
 }
 
 nav {
@@ -133,19 +142,14 @@ nav a {
 	padding: 5px;
 }
 
-section {
-	margin: 20px auto;
-	padding: 10px;
-	text-align: center;
-	width: 80%;
-}
+
 
 /**************
 	CLASS STYLES
 **************/
 .feedback {
 	color: red;
-	font-size: 33%;
+	font-size: 75%;
 }
 
 input.contact{
@@ -160,6 +164,30 @@ textarea.contact{
 	width: 40%;
 }
 
-.remove{
-	text-color: red;
+span.remove{
+	cursor: pointer;
+	color: red;
+
+}
+
+/*****************
+	FORM STYLES
+*****************/
+form[name="playerForm"] input{
+}
+
+input.ng-invalid.ng-touched, textarea.ng-invalid.ng-touched {
+border: 2px solid red;
+}
+
+.feedback{
+	display: block;
+}
+
+input[type="submit"]{
+	margin: 10px;
+}
+
+#player-list{
+	margin: 10px;
 }

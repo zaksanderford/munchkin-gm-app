@@ -48,7 +48,7 @@ munchkinGM.controller('PlayerController', ['$scope', '$http', function($scope, $
         gender: $scope.newPlayer.gender
       });
       $scope.newPlayer.name = "";
-      $scope.newPlayer.gender = "";
+      $scope.playerForm.$setUntouched();
     }
 
     $scope.removeAll = function(){
@@ -59,6 +59,7 @@ munchkinGM.controller('PlayerController', ['$scope', '$http', function($scope, $
       $scope.players = playerData.data;
     });
 
+    //getElementById('player-strength').innerHTML = getElementById('player-level').value + getElementById('player-bonus').value;
 
 }]);
 
